@@ -24,13 +24,13 @@ namespace grafika2
         }
         private GraphicsPath paraplan(int x, int y, int r)
             {
-            int[,] pts = { {x,y },
-                {x - 2*r, y + r },
+            int[,] pts = { {x,y+ 4*r },
+                {x - 2*r, y + 6*r },
                 {x,y+ 3*r },
                 {x+2*r,y + r },
                 {x,y },
-                {x+4*r,y },
-                {x+4*r,y+3*r },
+                {x+r,y },
+                {x+r,y+3*r },
                 {x, y+3*r}
             };
             Point[] pt = new Point[8]; // массив точек для gp
